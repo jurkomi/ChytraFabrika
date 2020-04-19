@@ -1,0 +1,234 @@
+{
+  "oilCost": 200.0,
+  "energyCost": 4.3,
+  "currency": "CZK",
+  "materials": [
+    {
+      "name": "wood",
+      "purchasePrice": 150.0
+    },
+    {
+      "name": "glass",
+      "purchasePrice": 45.1
+    }
+  ],
+  "employees": [
+    {
+      "type": "REPAIRMAN",
+      "salary": 18000.0,
+      "unitId": 3,
+      "name": "rep1",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "REPAIRMAN",
+      "salary": 18000.0,
+      "unitId": 4,
+      "name": "rep2",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "REPAIRMAN",
+      "salary": 18000.0,
+      "unitId": 5,
+      "name": "rep3",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "WORKMAN",
+      "salary": 18000.0,
+      "unitId": 6,
+      "name": "w1",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "WORKMAN",
+      "salary": 18000.0,
+      "unitId": 7,
+      "name": "w2",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "WORKMAN",
+      "salary": 18000.0,
+      "unitId": 8,
+      "name": "w3",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "WORKMAN",
+      "salary": 18000.0,
+      "unitId": 9,
+      "name": "w4",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "WORKMAN",
+      "salary": 18000.0,
+      "unitId": 10,
+      "name": "w5",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "WORKMAN",
+      "salary": 18000.0,
+      "unitId": 11,
+      "name": "w6",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "INSPECTOR",
+      "salary": 36000.0,
+      "unitId": 16,
+      "name": "Petr Stoural",
+      "purchasePrice": 0.0
+    },
+    {
+      "type": "DIRECTOR",
+      "salary": 90000.0,
+      "unitId": 17,
+      "name": "Josef Kral",
+      "purchasePrice": 0.0
+    }
+  ],
+  "equipment": [
+    {
+      "numberOfOperators": 0,
+      "energyConsumptionPerHour": 12.1,
+      "oilConsumptionPerHour": 0.05,
+      "unitId": 1,
+      "name": "eq1",
+      "purchasePrice": 24.5
+    },
+    {
+      "numberOfOperators": 0,
+      "energyConsumptionPerHour": 5.0,
+      "oilConsumptionPerHour": 1.0,
+      "unitId": 2,
+      "name": "robot",
+      "purchasePrice": 24.5
+    },
+    {
+      "numberOfOperators": 2,
+      "energyConsumptionPerHour": 12.1,
+      "oilConsumptionPerHour": 216.1,
+      "unitId": 12,
+      "name": "1",
+      "purchasePrice": 2.45
+    },
+    {
+      "numberOfOperators": 2,
+      "energyConsumptionPerHour": 12.1,
+      "oilConsumptionPerHour": 216.1,
+      "unitId": 13,
+      "name": "2",
+      "purchasePrice": 2.45
+    },
+    {
+      "numberOfOperators": 2,
+      "energyConsumptionPerHour": 12.1,
+      "oilConsumptionPerHour": 216.1,
+      "unitId": 14,
+      "name": "3",
+      "purchasePrice": 2.45
+    },
+    {
+      "batteryCapacity": 200.0,
+      "chargingTimeInHours": 1.1,
+      "numberOfOperators": 2,
+      "energyConsumptionPerHour": 12.1,
+      "oilConsumptionPerHour": 216.1,
+      "unitId": 15,
+      "name": "4",
+      "purchasePrice": 2.45
+    }
+  ],
+  "products": [
+    {
+      "name": "Wooden doll",
+      "productsPerCycle": 1000.0,
+      "sequence": []
+    },
+    {
+      "name": "Pergola",
+      "productsPerCycle": 0.5,
+      "sequence": []
+    },
+    {
+      "name": "Rocking horse",
+      "productsPerCycle": 20.0,
+      "sequence": [
+        {
+          "itemLabel": "Workman",
+          "itemType": "PERSON",
+          "itemQuantity": 2,
+          "material": "wood",
+          "materialQuantity": 10.0,
+          "assignedUnitIds": [
+            "6",
+            "7"
+          ]
+        },
+        {
+          "itemLabel": "eq1",
+          "itemType": "EQUIPMENT",
+          "itemQuantity": 1,
+          "material": "wood",
+          "materialQuantity": 5.0,
+          "assignedUnitIds": [
+            "1"
+          ]
+        },
+        {
+          "itemLabel": "robot",
+          "itemType": "EQUIPMENT",
+          "itemQuantity": 1,
+          "material": "wood",
+          "materialQuantity": 1.0,
+          "assignedUnitIds": [
+            "2"
+          ]
+        },
+        {
+          "itemLabel": "Workman",
+          "itemType": "PERSON",
+          "itemQuantity": 1,
+          "material": "wood",
+          "materialQuantity": 10.0,
+          "assignedUnitIds": [
+            "8"
+          ]
+        },
+        {
+          "itemLabel": "4",
+          "itemType": "EQUIPMENT",
+          "itemQuantity": 1,
+          "material": "wood",
+          "materialQuantity": 1.0,
+          "assignedUnitIds": [
+            "15"
+          ]
+        }
+      ]
+    }
+  ],
+  "plines": [
+    {
+      "label": "line1",
+      "priority": "HIGH",
+      "productToBeMade": "Rocking horse",
+      "quantityTarget": 5660,
+      "productionQueue": [
+        {
+          "productName": "Rocking horse",
+          "quantity": 10000
+        }
+      ]
+    },
+    {
+      "label": "line2",
+      "priority": "HIGH"
+    }
+  ],
+  "name": "First Factory"
+}

@@ -1,7 +1,5 @@
 package fel.cvut.cz.omo.sem.resources.equipment
 
-import fel.cvut.cz.omo.sem.resources.persons.*
-
 class EquipmentContainer {
 
     private val equipmentList = mutableListOf<Equipment>()

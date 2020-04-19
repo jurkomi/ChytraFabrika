@@ -1,6 +1,6 @@
 package fel.cvut.cz.omo.sem
 
-import fel.cvut.cz.omo.sem.resources.persons.Person
+import fel.cvut.cz.omo.sem.resources.people.Person
 import fel.cvut.cz.omo.sem.production.Product
 import fel.cvut.cz.omo.sem.production.ProductionLine
 import fel.cvut.cz.omo.sem.resources.equipment.Equipment

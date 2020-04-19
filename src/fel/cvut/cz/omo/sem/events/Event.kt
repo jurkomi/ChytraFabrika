@@ -2,12 +2,18 @@ package fel.cvut.cz.omo.sem.events
 
 import fel.cvut.cz.omo.sem.Factory
 import fel.cvut.cz.omo.sem.production.LinePriority
-import fel.cvut.cz.omo.sem.resources.Unit
 import fel.cvut.cz.omo.sem.Observer
-import java.util.*
-import javax.naming.Context
 
-abstract class Event(private val factory: Factory, private val context: Observer, linePriority: LinePriority?, registeredUnits: List<Observer>?) {
+abstract class Event(factory: Factory,
+                     context: Observer,
+                     linePriority: LinePriority?,
+                     registeredUnits: List<Observer>?) {
+
+    abstract val origin: String
+
+    open fun getRepairmanName(): String? {
+        return null
+    }
 
     val priority = when (linePriority) {
         LinePriority.HIGH -> EventPriority.IMPORTANT
@@ -23,6 +29,7 @@ abstract class Event(private val factory: Factory, private val context: Observer
     }
 
     abstract fun solve(): Boolean
+    abstract fun getContext(): Observer
 
     fun register(observer: Observer) {
         registeredUnits.add(observer)

@@ -7,8 +7,9 @@ class PluggedEquipment(factory: Factory,
                        purchasePrice: Double,
                        numberOfOperators: Int,
                        energyConsumptionPerHour: Double,
-                       oilConsumptionPerHour: Double
-) : Equipment(factory, name, purchasePrice, numberOfOperators, energyConsumptionPerHour, oilConsumptionPerHour) {
+                       oilConsumptionPerHour: Double,
+                       id: Int? = null
+) : Equipment(factory, name, purchasePrice, numberOfOperators, energyConsumptionPerHour, oilConsumptionPerHour, id) {
 
     init {
         factory.addEquipment(this)

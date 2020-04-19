@@ -1,17 +1,29 @@
 package fel.cvut.cz.omo.sem.resources
 
-import fel.cvut.cz.omo.sem.Factory
-import fel.cvut.cz.omo.sem.FactoryItem
-import fel.cvut.cz.omo.sem.Observer
-import fel.cvut.cz.omo.sem.Visitable
+import com.google.gson.annotations.Expose
+import fel.cvut.cz.omo.sem.*
 import fel.cvut.cz.omo.sem.events.Event
 import fel.cvut.cz.omo.sem.production.ProductionLine
 
-abstract class Unit(val factory: Factory, val name: String, val purchasePrice: Double) : Resource(factory, name, purchasePrice), Execution, FactoryItem, Observer,
-    Visitable {
+abstract class Unit(
+    factory: Factory,
+    @Expose val name: String,
+    @Expose val purchasePrice: Double,
+    private val id: Int? = null
+) : Resource(factory, name, purchasePrice), Execution, FactoryItem, Observer, Visitable {
+
+    companion object {
+        var i: Int = 0
+    }
+
+    @Expose val unitId: Int = id ?: ++i
+
+    init {
+        if (id != null && id > i) i = id
+    }
 
     abstract val hourlyCost: Double
-    val eventsRegistered: MutableList<Event> = mutableListOf()
+    private val eventsRegistered: MutableList<Event> = mutableListOf()
     protected var pline: ProductionLine? = null
 
     fun registerToEvent(event: Event) {

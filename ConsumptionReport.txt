@@ -1,0 +1,42 @@
+Consumption report for cycles 5-20:
+
+Equipment consumption:
+	eq1:
+		EnergyConsumption: 193.59999999999994 (832.4799999999997 CZK)
+		Oil Consumption: 0.8000000000000002 (160.00000000000003 CZK)
+		Material Consumption: wood 75.0 (11250.0 CZK)
+	robot:
+		EnergyConsumption: 80.0 (344.0 CZK)
+		Oil Consumption: 16.0 (3200.0 CZK)
+		Material Consumption: wood 15.0 (2250.0 CZK)
+	1:
+		EnergyConsumption: 0.0 (0.0 CZK)
+		Oil Consumption: 0.0 (0.0 CZK)
+		Material Consumption: no consumption
+	2:
+		EnergyConsumption: 0.0 (0.0 CZK)
+		Oil Consumption: 0.0 (0.0 CZK)
+		Material Consumption: no consumption
+	3:
+		EnergyConsumption: 0.0 (0.0 CZK)
+		Oil Consumption: 0.0 (0.0 CZK)
+		Material Consumption: no consumption
+	4:
+		EnergyConsumption: 181.49999999999994 (780.4499999999997 CZK)
+		Oil Consumption: 3457.599999999999 (691519.9999999998 CZK)
+		Material Consumption: wood 15.0 (2250.0 CZK)
+
+Production line consumption:
+	line1:
+		EnergyConsumption: 437.9999999999999 (1883.3999999999994 CZK)
+		Oil Consumption: 0.0 (0.0 CZK)
+		Material Consumption: wood 555.0 (83250.0 CZK)
+	line2:
+		EnergyConsumption: 0.0 (0.0 CZK)
+		Oil Consumption: 0.0 (0.0 CZK)
+		Material Consumption: no consumption
+
+Factory consumption:
+	Energy consumption: 437.9999999999999 (1883.3999999999994 CZK)
+	Oil consumption: 0.0 (0.0 CZK)
+	Material Consumption: wood 555.0 (83250.0 CZK)

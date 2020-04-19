@@ -1,0 +1,9 @@
+Outages report for cycles 1-260:
+
+Longest outage duration: 4
+Shortest outage duration: 0
+Average outage duration: 0.5217391304347826
+Average waiting time for a repairman: 0
+Outages due to broken equipment duration: 12
+Outages due to drained battery duration: 0
+Outages due to unavailable units duration: 0

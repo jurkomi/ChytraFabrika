@@ -1,0 +1,148 @@
+Event report for cycles 0-260:
+
+Events grouped by type:
+AddEquipmentToProductionLineEvent: 0, 0, 0, 5, 5, 5
+BatteryChangedEvent: 13, 26, 39, 52, 65, 78, 95, 108, 121, 134, 147, 160, 177, 190, 203, 216, 229, 242, 255
+BrokenEvent: 80, 82, 90, 168, 183, 184
+ChangeBatteryEvent: 13, 26, 39, 52, 65, 78, 95, 108, 121, 134, 147, 160, 177, 190, 203, 216, 229, 242, 255
+RemoveEquipmentFromProductionLineEvent: 5, 5, 5
+RepairStartEvent: 80, 82, 90, 168, 183, 184
+RepairedEvent: 84, 86, 94, 172, 186, 188
+
+Events grouped by origin:
+4:
+	Cycle 13: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 26: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 39: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 52: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 65: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 78: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 80: 
+		BrokenEvent: priority important
+		RepairStartEvent: priority important
+	Cycle 84: 
+		RepairedEvent: priority important
+	Cycle 95: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 108: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 121: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 134: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 147: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 160: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 168: 
+		BrokenEvent: priority important
+		RepairStartEvent: priority important
+	Cycle 172: 
+		RepairedEvent: priority important
+	Cycle 177: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 190: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 203: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 216: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 229: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 242: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+	Cycle 255: 
+		ChangeBatteryEvent: priority important
+		BatteryChangedEvent: priority important
+eq1:
+	Cycle 82: 
+		BrokenEvent: priority important
+		RepairStartEvent: priority important
+	Cycle 86: 
+		RepairedEvent: priority important
+	Cycle 183: 
+		BrokenEvent: priority important
+		RepairStartEvent: priority important
+	Cycle 186: 
+		RepairedEvent: priority important
+line1:
+	Cycle 0: 
+		AddEquipmentToProductionLineEvent: priority important
+		AddEquipmentToProductionLineEvent: priority important
+		AddEquipmentToProductionLineEvent: priority important
+	Cycle 5: 
+		RemoveEquipmentFromProductionLineEvent: priority important
+		RemoveEquipmentFromProductionLineEvent: priority important
+		RemoveEquipmentFromProductionLineEvent: priority important
+		AddEquipmentToProductionLineEvent: priority important
+		AddEquipmentToProductionLineEvent: priority important
+		AddEquipmentToProductionLineEvent: priority important
+robot:
+	Cycle 90: 
+		BrokenEvent: priority important
+		RepairStartEvent: priority important
+	Cycle 94: 
+		RepairedEvent: priority important
+	Cycle 184: 
+		BrokenEvent: priority important
+		RepairStartEvent: priority important
+	Cycle 188: 
+		RepairedEvent: priority important
+
+Events grouped by repairman:
+rep1:
+	Cycle 80: 
+		BrokenEvent: origin 4, priority important
+		RepairStartEvent: origin 4, priority important
+	Cycle 84: 
+		RepairedEvent: origin 4, priority important
+	Cycle 90: 
+		BrokenEvent: origin robot, priority important
+		RepairStartEvent: origin robot, priority important
+	Cycle 94: 
+		RepairedEvent: origin robot, priority important
+	Cycle 168: 
+		BrokenEvent: origin 4, priority important
+		RepairStartEvent: origin 4, priority important
+	Cycle 172: 
+		RepairedEvent: origin 4, priority important
+	Cycle 183: 
+		BrokenEvent: origin eq1, priority important
+		RepairStartEvent: origin eq1, priority important
+	Cycle 186: 
+		RepairedEvent: origin eq1, priority important
+rep2:
+	Cycle 82: 
+		BrokenEvent: origin eq1, priority important
+		RepairStartEvent: origin eq1, priority important
+	Cycle 86: 
+		RepairedEvent: origin eq1, priority important
+	Cycle 184: 
+		BrokenEvent: origin robot, priority important
+		RepairStartEvent: origin robot, priority important
+	Cycle 188: 
+		RepairedEvent: origin robot, priority important

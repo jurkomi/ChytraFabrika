@@ -1,0 +1,33 @@
+Factory configuration report for cycles 0-5:
+
+Factory First Factory configuration:
+Cycle 0:
+	Production line line1: product Rocking horse
+		Sequence: Person w1, Person w2, Robot eq1, Robot robot, Person w3, Machine 4
+	Production line line2: product no product
+		Sequence: no sequence
+Cycle 1:
+	Production line line1: product Rocking horse
+		Sequence: Person w1, Person w2, Robot eq1, Robot robot, Person w3, Machine 4
+	Production line line2: product no product
+		Sequence: no sequence
+Cycle 2:
+	Production line line1: product Rocking horse
+		Sequence: Person w1, Person w2, Robot eq1, Robot robot, Person w3, Machine 4
+	Production line line2: product no product
+		Sequence: no sequence
+Cycle 3:
+	Production line line1: product Rocking horse
+		Sequence: Person w1, Person w2, Robot eq1, Robot robot, Person w3, Machine 4
+	Production line line2: product no product
+		Sequence: no sequence
+Cycle 4:
+	Production line line1: product Rocking horse
+		Sequence: Person w1, Person w2, Robot eq1, Robot robot, Person w3, Machine 4
+	Production line line2: product no product
+		Sequence: no sequence
+Cycle 5:
+	Production line line1: product Rocking horse
+		Sequence: Person w1, Person w2, Robot eq1, Robot robot, Person w3, Machine 4
+	Production line line2: product no product
+		Sequence: no sequence
